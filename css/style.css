@@ -72,6 +72,11 @@ header {
 
 .gold { color: #d4af37; }
 
+.tel-link {
+    color: white;
+    text-decoration: none;
+}
+
 .cta {
     background: #d4af37;
     color: black;
