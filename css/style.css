@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav button {
+    background: none;
+    color: #d4af37;
+    border: none;
+    cursor: pointer;
+}
+
+.lang-switch {
+    width: auto;
+    margin: 0;
+    padding: 6px 10px;
+    background: #111;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header {
+    background: url('../images/cars.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        background: url('../images/cars_mobile_device.jpg') center/cover no-repeat;
+    }
+
+    .overlay {
+        padding: 25px;
+    }
+
+    .overlay h1 {
+        font-size: 1.6rem;
+    }
+
+    .overlay p {
+        font-size: 0.9rem;
+    }
+}
+
+.overlay {
+    background: rgba(0,0,0,0.75);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.gold { color: #d4af37; }
+
+.cta {
+    background: #d4af37;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.form-container {
+    background: #111;
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fff;
+    color: #111;
+}
+
+/* FLOAT */
+.floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #d4af37;
+    color: black;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.success {
+    color: lightgreen;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
