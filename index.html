@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>MTL Auto Credit Expert</title>
 </head>
 
@@ -52,15 +53,17 @@
 
                 <input type="text" name="income" placeholder="Monthly Income" data-fs-field>
 
-                <select name="employment" data-fs-field>
-                    <option>Employment Status</option>
+                <select name="employment" class="placeholder" data-fs-field
+                    onchange="this.classList.toggle('placeholder', this.value === '')">
+                    <option value="" selected disabled hidden>Employment Status</option>
                     <option>Employed</option>
                     <option>Self-employed</option>
                     <option>Unemployed</option>
                 </select>
 
-                <select name="credit" data-fs-field>
-                    <option>Credit Situation</option>
+                <select name="credit" class="placeholder" data-fs-field
+                    onchange="this.classList.toggle('placeholder', this.value === '')">
+                    <option value="" selected disabled hidden>Credit Situation</option>
                     <option>Good</option>
                     <option>Bad</option>
                     <option>No credit</option>

@@ -101,7 +101,11 @@ input, select {
     color: #111;
 }
 
-/* FLOAT */
+input::placeholder,
+select.placeholder {
+    color: #757575;
+}
+
 .floating {
     position: fixed;
     bottom: 20px;
